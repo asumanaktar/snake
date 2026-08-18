@@ -2,6 +2,8 @@
 
 A simple retro-style Snake game inspired by the classic Nokia 3310 Snake.
 
+[View Live Demo](https://asumanaktar.github.io/snake/)
+
 ## Features
 
 * Classic Snake gameplay
