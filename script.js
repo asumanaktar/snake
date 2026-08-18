@@ -190,8 +190,12 @@ function drawGameOver() {
 
     ctx.font = "16px monospace";
 
+    const restartText = window.innerWidth <= 500
+    ? "TAP TO RESTART"
+    : "PRESS ENTER";
+
     ctx.fillText(
-        "PRESS ENTER",
+        restartText,
         canvas.width / 2,
         canvas.height / 2 + 55
     );
@@ -271,4 +275,10 @@ controlButtons.forEach(button => {
             nextDirection = "down";
         }
     });
+});
+
+canvas.addEventListener("click", () => {
+    if (gameOver) {
+        restartGame();
+    }
 });
